@@ -12,7 +12,20 @@
 			{{ session()->get('success') }}
 		</div><br>
 	@endif
-	<table class="table table-striped">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	  <a class="navbar-brand" href="{{ url('/') }}">Navbar</a>
+
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav mr-auto">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="{{ url('/shares/create') }}">Create <span class="sr-only">(current)</span></a>
+	      </li>
+	    </ul>
+	  </div>
+	</nav>
+	<br>
+	<table class="table table-dark table-striped">
 		<thead>
 			<tr>
 				<td>ID</td>
